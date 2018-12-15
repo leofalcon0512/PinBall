@@ -32,7 +32,6 @@ public class BallController : MonoBehaviour {
 
 
 	void OnCollisionEnter(Collision other){
-		Debug.Log (other.gameObject.tag);
 		if(other.gameObject.tag == "SmallStar Tag"){
 			score += 10;
 		}else if(other.gameObject.tag == "LargeStar Tag"){
